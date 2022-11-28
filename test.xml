@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Document-Invoice>
+  <Invoice-Header>
+    <InvoiceNumber>FS/000006/11/22/MAR</InvoiceNumber>
+    <InvoiceDate>2022-11-04</InvoiceDate>
+    <SalesDate>2022-11-04</SalesDate>
+    <InvoiceCurrency>PLN</InvoiceCurrency>
+    <InvoicePaymentDueDate>2022-11-18</InvoicePaymentDueDate>
+    <DocumentFunctionCode>O</DocumentFunctionCode>
+    <Description></Description>
+    <VatExemption></VatExemption>
+    <Delivery>
+      <DeliveryLocationNumber />
+      <SellingPoint>strzeliński</SellingPoint>
+      <DeliveryDate>2022-11-04</DeliveryDate>
+      <DespatchNumber>WZ/000243/11/22/MB</DespatchNumber>
+      <StreetAndNumber>ul. Rubinowa 9</StreetAndNumber>
+      <CityName>Szczawin</CityName>
+      <PostalCode>57-100</PostalCode>
+      <Country>PL</Country>
+    </Delivery>
+  </Invoice-Header>
+  <Invoice-Parties>
+    <Buyer>
+      <Code>INTERIOR ESTHETIC_SZCZAWIN</Code>
+      <ILN />
+      <TaxID>9141532235</TaxID>
+      <Name>INTERIOR ESTHETIC S.C. SYLWESTER STASIULEWICZ WIESŁAW TKACZYK</Name>
+      <StreetAndNumber>ul. Rubinowa 9</StreetAndNumber>
+      <CityName>Szczawin</CityName>
+      <PostalCode>57-100</PostalCode>
+      <Country>PL</Country>
+    </Buyer>
+    <Invoicee>
+      <Code>INTERIOR ESTHETIC_SZCZAWIN</Code>
+      <ILN />
+      <TaxID>9141532235</TaxID>
+      <Name>INTERIOR ESTHETIC S.C. SYLWESTER STASIULEWICZ WIESŁAW TKACZYK</Name>
+      <StreetAndNumber>ul. Rubinowa 9</StreetAndNumber>
+      <CityName>Szczawin</CityName>
+      <PostalCode>57-100</PostalCode>
+      <Country>PL</Country>
+    </Invoicee>
+    <Seller>
+      <ILN>5909000838130</ILN>
+      <TaxID>8883093173</TaxID>
+      <AccountNumber>87114011080000328385001001</AccountNumber>
+      <CodeByBuyer></CodeByBuyer>
+      <Name>MAJSTER BUDOWLANE ABC SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</Name>
+      <StreetAndNumber>Barska 7/9</StreetAndNumber>
+      <CityName>Włocławek</CityName>
+      <PostalCode>87-800</PostalCode>
+      <Country>PL</Country>
+      <CourtAndCapitalInformation>, Kapitał zakładowy  PLN, Kapitał wpłacony  PLN</CourtAndCapitalInformation>
+    </Seller>
+    <SellerHeadquarters>
+      <ILN>5909000838130</ILN>
+      <Name>MAJSTER BUDOWLANE ABC SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</Name>
+      <StreetAndNumber>Barska 7/9</StreetAndNumber>
+      <CityName>Włocławek</CityName>
+      <PostalCode>87-800</PostalCode>
+      <Country>PL</Country>
+    </SellerHeadquarters>
+  </Invoice-Parties>
+  <Invoice-Lines>
+    <Line>
+      <Line-Item>
+        <LineNumber>1</LineNumber>
+        <EAN>2026320240023</EAN>
+        <BuyerItemCode></BuyerItemCode>
+        <SupplierItemCode>2026320240023</SupplierItemCode>
+        <ItemDescription>kaseton reklamowy 0,50 x 1,30</ItemDescription>
+        <ItemType>CU</ItemType>
+        <InvoiceQuantity>1.000</InvoiceQuantity>
+        <UnitOfMeasure>PCE</UnitOfMeasure>
+        <InvoiceUnitNetPrice>970.0000</InvoiceUnitNetPrice>
+        <TaxRate>23.00</TaxRate>
+        <TaxCategoryCode>S</TaxCategoryCode>
+        <TaxReference>
+          <ReferenceType>PKWiU</ReferenceType>
+          <ReferenceNumber></ReferenceNumber>
+        </TaxReference>
+        <TaxAmount>223.10</TaxAmount>
+        <NetAmount>970.00</NetAmount>
+      </Line-Item>
+      <Line-Order />
+      <Line-Delivery>
+        <DeliveryLocationNumber />
+        <SellingPoint>strzeliński</SellingPoint>
+        <DeliveryDate>2022-11-04</DeliveryDate>
+        <DespatchNumber>WZ/000243/11/22/MB</DespatchNumber>
+        <StreetAndNumber>ul. Rubinowa 9</StreetAndNumber>
+        <CityName>Szczawin</CityName>
+        <PostalCode>57-100</PostalCode>
+        <Country>PL</Country>
+      </Line-Delivery>
+    </Line>
+  </Invoice-Lines>
+  <Invoice-Summary>
+    <TotalLines>1</TotalLines>
+    <TotalNetAmount>970.00</TotalNetAmount>
+    <TotalTaxableBasis>970.00</TotalTaxableBasis>
+    <TotalTaxAmount>223.10</TotalTaxAmount>
+    <TotalGrossAmount>1193.10</TotalGrossAmount>
+    <Tax-Summary>
+      <Tax-Summary-Line>
+        <TaxRate>23.00</TaxRate>
+        <TaxCategoryCode>S</TaxCategoryCode>
+        <TaxAmount>223.10</TaxAmount>
+        <TaxableBasis>970.00</TaxableBasis>
+        <TaxableAmount>970.00</TaxableAmount>
+        <GrossAmount>1193.10</GrossAmount>
+      </Tax-Summary-Line>
+    </Tax-Summary>
+  </Invoice-Summary>
+</Document-Invoice>

@@ -7,6 +7,8 @@ import pandas
 import datetime as dt
 
 #net use //192.168.68.199/homes/danielkwiecinski/wymiana/mbabc/faktury_11
+input("Press Enter to continue...")
+
 today=dt.datetime.now()
 MM=today.month
 RR=today.year

@@ -6,12 +6,13 @@ from os.path import isfile, join
 import pandas
 import datetime as dt
 
+#net use //192.168.68.199/homes/danielkwiecinski/wymiana/mbabc/faktury_11
 today=dt.datetime.now()
 MM=today.month
 RR=today.year
 actualDIR=str(str(RR)+str(MM))
 print(actualDIR)
-Ldir="d:\XML_Faktury"
+Ldir="z:/mbabc/faktury_11"
 outDIR_tmp="d:\majster"
 outDIR=os.path.join(outDIR_tmp, actualDIR)
 testNIP=['7010355056','8890002504']
@@ -44,16 +45,17 @@ for f in files:
 
         print('taxID=',root[1][0][2].text)
         dir2create=root[1][0][2].text
-        partner_DIR = os.path.join(outDIR,dir2create)
+        if dir2create in testNIP:
+            partner_DIR = os.path.join(outDIR,dir2create)
 
-        if os.path.isdir(partner_DIR):
-            print('kopiowanie', fullpath,os.path.join(partner_DIR,f))
-            shutil.copyfile(fullpath,os.path.join(partner_DIR,f))
-        else:
-            print("Tworzę Katalog ",partner_DIR)
-            os.mkdir(partner_DIR)
-            print('kopiowanie', fullpath, os.path.join(partner_DIR, f))
-            shutil.copyfile(fullpath, os.path.join(partner_DIR, f))
+            if os.path.isdir(partner_DIR):
+                print('kopiowanie', fullpath,os.path.join(partner_DIR,f))
+                shutil.copyfile(fullpath,os.path.join(partner_DIR,f))
+            else:
+                print("Tworzę Katalog ",partner_DIR)
+                os.mkdir(partner_DIR)
+                print('kopiowanie', fullpath, os.path.join(partner_DIR, f))
+                shutil.copyfile(fullpath, os.path.join(partner_DIR, f))
 
     #print('taxID=',root.findall('./Document-Invoice/Invoice-Parties/Buyer/TaxID'))
     # calling the root element

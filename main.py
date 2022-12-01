@@ -1,39 +1,60 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 import xml.etree.ElementTree as ET
+import os, shutil
+from os import listdir
+from os.path import isfile, join
+import pandas
+import datetime as dt
 
+today=dt.datetime.now()
+MM=today.month
+RR=today.year
+actualDIR=str(str(RR)+str(MM))
+print(actualDIR)
+Ldir="d:\XML_Faktury"
+outDIR_tmp="d:\majster"
+outDIR=os.path.join(outDIR_tmp, actualDIR)
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+if not os.path.isdir(outDIR):
+    os.mkdir(outDIR)
 
+files=os.listdir(Ldir)
+for f in files:
+    isInvoice=0
+    test_f=f[0:2]
+    print('##########',test_f)
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+    if test_f=='FS':
+        isInvoice=1
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
-tree = ET.parse('test.xml')
+    if isInvoice:
+        fullpath = os.path.join(Ldir, f)
+        tree = ET.parse(fullpath)
+        Buyer=tree.findall('Buyer')
+        root=tree.getroot()
+        #print(root.tag)
+        #for child in root:
+        #    print(child.tag,child.attrib)
+        #print([elem.tag for elem in root.iter()])
+        #for TaxID in root.iter('TaxID'):
+        #    print('TaxID', TaxID.text )
+        #for TaxID in root.findall('./Document-Invoice/Invoice-Parties/Buyer/'):
+        #    print('test', TaxID.attrib)
 
-Buyer=tree.findall('Buyer')
+        print('taxID=',root[1][0][2].text)
+        dir2create=root[1][0][2].text
+        partner_DIR = os.path.join(outDIR,dir2create)
 
-root=tree.getroot()
-#print(root.tag)
-#for child in root:
-#    print(child.tag,child.attrib)
+        if os.path.isdir(partner_DIR):
+            print('kopiowanie', fullpath,os.path.join(partner_DIR,f))
+            shutil.copyfile(fullpath,os.path.join(partner_DIR,f))
+        else:
+            print("Tworzę Katalog ",partner_DIR)
+            os.mkdir(partner_DIR)
+            print('kopiowanie', fullpath, os.path.join(partner_DIR, f))
+            shutil.copyfile(fullpath, os.path.join(partner_DIR, f))
 
-#print([elem.tag for elem in root.iter()])
-#for TaxID in root.iter('TaxID'):
-#    print('TaxID', TaxID.text )
-
-#for TaxID in root.findall('./Document-Invoice/Invoice-Parties/Buyer/'):
-#    print('test', TaxID.attrib)
-
-print('taxID=',root[1][0][2].text)
-#print('taxID=',root.findall('./Document-Invoice/Invoice-Parties/Buyer/TaxID'))
-# calling the root element
+    #print('taxID=',root.findall('./Document-Invoice/Invoice-Parties/Buyer/TaxID'))
+    # calling the root element
 
 

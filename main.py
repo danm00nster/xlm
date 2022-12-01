@@ -14,6 +14,7 @@ print(actualDIR)
 Ldir="d:\XML_Faktury"
 outDIR_tmp="d:\majster"
 outDIR=os.path.join(outDIR_tmp, actualDIR)
+testNIP=['7010355056','8890002504']
 
 if not os.path.isdir(outDIR):
     os.mkdir(outDIR)

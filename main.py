@@ -7,18 +7,20 @@ import pandas
 import datetime as dt
 
 #net use //192.168.68.199/homes/danielkwiecinski/wymiana/mbabc/faktury_11
-input("Press Enter to continue...")
+#input("Press Enter to continue...")
 
 today=dt.datetime.now()
 MM=today.month
 RR=today.year
 actualDIR=str(str(RR)+str(MM))
 print(actualDIR)
-Ldir="z:/mbabc/faktury_11"
-outDIR_tmp="d:\majster"
-outDIR=os.path.join(outDIR_tmp, actualDIR)
+Local_dir="z:/mbabc/faktury_11"
+outDIR="d:\majster\Testf"
+#outDIR=os.path.join(outDIR_tmp, actualDIR)
+Ldir=os.path.join(Local_dir, actualDIR)
 testNIP=['7010355056','8890002504']
-
+fileExist=0
+fileCopy=0
 if not os.path.isdir(outDIR):
     os.mkdir(outDIR)
 
@@ -51,8 +53,13 @@ for f in files:
             partner_DIR = os.path.join(outDIR,dir2create)
 
             if os.path.isdir(partner_DIR):
-                print('kopiowanie', fullpath,os.path.join(partner_DIR,f))
-                shutil.copyfile(fullpath,os.path.join(partner_DIR,f))
+                if os.path.isfile(os.path.join(partner_DIR,f)):
+                    print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++Plik Istnieje")
+                    fileExist=fileExist+1
+                else:
+                    print('kopiowanie', fullpath,os.path.join(partner_DIR,f))
+                    shutil.copyfile(fullpath,os.path.join(partner_DIR,f))
+                    fileCopy=fileCopy+1
             else:
                 print("Tworzę Katalog ",partner_DIR)
                 os.mkdir(partner_DIR)
@@ -61,5 +68,5 @@ for f in files:
 
     #print('taxID=',root.findall('./Document-Invoice/Invoice-Parties/Buyer/TaxID'))
     # calling the root element
-
+print("Skopiowane", fileCopy, "istnieją", fileExist)
 

@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 import os, shutil
 from os import listdir
 from os.path import isfile, join
-import pandas
+import sys
 import datetime as dt
 
 #net use //192.168.68.199/homes/danielkwiecinski/wymiana/mbabc/faktury_11
@@ -12,7 +12,13 @@ import datetime as dt
 today=dt.datetime.now()
 MM=today.month
 RR=today.year
-actualDIR=str(str(RR)+str(MM))
+print(len(sys.argv))
+input("wait")
+if len(sys.argv)==1:
+    actualDIR=str(str(RR)+str(MM))
+else:
+    actualDIR=sys.argv[1]
+
 print(actualDIR)
 Local_dir="z:/mbabc/faktury_11"
 outDIR="d:\majster\Testf"
@@ -69,4 +75,5 @@ for f in files:
     #print('taxID=',root.findall('./Document-Invoice/Invoice-Parties/Buyer/TaxID'))
     # calling the root element
 print("Skopiowane", fileCopy, "istnieją", fileExist)
+prin(actualDIR)
 

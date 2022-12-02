@@ -1,0 +1,78 @@
+2022-12-02 20:54:20.939672 Strat 
+   args 1
+   202212
+   Plik Istnieje FS_000339_11_22_MB.xml
+   Plik Istnieje FS_000218_11_22_MB.xml
+   Plik Istnieje FS_000171_11_22_MB.xml
+   Plik Istnieje FS_000169_11_22_MB.xml
+   Plik Istnieje FS_000180_11_22_MB.xml
+   Plik Istnieje FS_000270_11_22_MB.xml
+   Plik Istnieje FS_000156_11_22_MB.xml
+   Plik Istnieje FS_000213_11_22_MB.xml
+   Plik Istnieje FS_000352_11_22_MB.xml
+   Plik Istnieje FS_000280_11_22_MB.xml
+   Plik Istnieje FS_000212_11_22_MB.xml
+2022-12-02 20:54:39.485925 Skopiowane 0 istniej¹ 11 END
+2022-12-02 20:57:56.590219 Strat 
+   args 1
+   202212
+   Plik Istnieje FS_000339_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000218_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000171_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000169_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000180_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000270_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000156_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000213_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000352_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000280_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000212_11_22_MB.xml NIP 8890002504
+2022-12-02 20:58:18.491601 Skopiowane 0 istniej¹ 11 END
+2022-12-02 20:58:56.498714 Strat 
+   args 1
+   202212
+   Plik Istnieje FS_000339_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000218_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000171_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000169_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000180_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000270_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000156_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000213_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000352_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000280_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000212_11_22_MB.xml NIP 8890002504
+2022-12-02 20:59:16.501748 Skopiowane 0 istniej¹ 11 END
+
+2022-12-02 20:59:18.701778 Strat 
+   args 1
+   202212
+   Plik Istnieje FS_000339_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000218_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000171_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000169_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000180_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000270_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000156_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000213_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000352_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000280_11_22_MB.xml NIP 8890002504
+   Plik Istnieje FS_000212_11_22_MB.xml NIP 8890002504
+2022-12-02 20:59:38.398869 Skopiowane 0 istniej¹ 11 END
+
+2022-12-02 21:04:18.268621 Strat 
+   sys.argv 1
+   Katalog wejœciowy - data 202212
+       Plik Istnieje FS_000339_11_22_MB.xml NIP 8890002504
+       Plik Istnieje FS_000218_11_22_MB.xml NIP 8890002504
+       Plik Istnieje FS_000171_11_22_MB.xml NIP 8890002504
+       Plik Istnieje FS_000169_11_22_MB.xml NIP 8890002504
+       Plik Istnieje FS_000180_11_22_MB.xml NIP 8890002504
+       Plik Istnieje FS_000270_11_22_MB.xml NIP 8890002504
+       Plik Istnieje FS_000156_11_22_MB.xml NIP 8890002504
+       Plik Istnieje FS_000213_11_22_MB.xml NIP 8890002504
+       Plik Istnieje FS_000352_11_22_MB.xml NIP 8890002504
+       Plik Istnieje FS_000280_11_22_MB.xml NIP 8890002504
+       Plik Istnieje FS_000212_11_22_MB.xml NIP 8890002504
+2022-12-02 21:04:38.785307 Skopiowane 0 istniej¹ 11 END
+

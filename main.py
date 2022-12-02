@@ -13,7 +13,7 @@ today=dt.datetime.now()
 MM=today.month
 RR=today.year
 print(len(sys.argv))
-input("wait")
+
 if len(sys.argv)==1:
     actualDIR=str(str(RR)+str(MM))
 else:
@@ -75,5 +75,5 @@ for f in files:
     #print('taxID=',root.findall('./Document-Invoice/Invoice-Parties/Buyer/TaxID'))
     # calling the root element
 print("Skopiowane", fileCopy, "istnieją", fileExist)
-prin(actualDIR)
+print(actualDIR)
 

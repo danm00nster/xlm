@@ -76,3 +76,19 @@
        Plik Istnieje FS_000212_11_22_MB.xml NIP 8890002504
 2022-12-02 21:04:38.785307 Skopiowane 0 istniej¹ 11 END
 
+2022-12-02 21:05:56.666006 Strat 
+   sys.argv 1
+   Katalog wejœciowy - data 202212
+   Kopiujê PLIK FS_000339_11_22_MB.xml NIP 8890002504
+       Plik Istnieje FS_000218_11_22_MB.xml NIP 8890002504
+       Plik Istnieje FS_000171_11_22_MB.xml NIP 8890002504
+   Kopiujê PLIK FS_000169_11_22_MB.xml NIP 8890002504
+       Plik Istnieje FS_000180_11_22_MB.xml NIP 8890002504
+       Plik Istnieje FS_000270_11_22_MB.xml NIP 8890002504
+       Plik Istnieje FS_000156_11_22_MB.xml NIP 8890002504
+       Plik Istnieje FS_000213_11_22_MB.xml NIP 8890002504
+       Plik Istnieje FS_000352_11_22_MB.xml NIP 8890002504
+       Plik Istnieje FS_000280_11_22_MB.xml NIP 8890002504
+   Kopiujê PLIK FS_000212_11_22_MB.xml NIP 8890002504
+2022-12-02 21:06:12.415180 Skopiowane 3 istniej¹ 8 END
+

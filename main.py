@@ -4,7 +4,7 @@ import shutil
 import sys
 import datetime as dt
 
-fLOG=open('log_python.txt' , 'a')
+fLOG=open('log_python.txt' , 'a', encoding="utf-8")
 today = dt.datetime.now()
 fLOG.writelines(str(today)+" Strat \n")
 MM = today.month
@@ -58,7 +58,7 @@ if os.path.isdir(Ldir):
                 else:
                     fLOG.writelines("   Tworzę Katalog " + str(partner_DIR))
                     os.mkdir(partner_DIR)
-                    print('kopiowanie', fullpath, os.path.join(partner_DIR, f))
+                    #print('kopiowanie', fullpath, os.path.join(partner_DIR, f))
                     shutil.copyfile(fullpath, os.path.join(partner_DIR, f))
 else:
     print("brak katalogu",Ldir)
